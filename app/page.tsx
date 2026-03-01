@@ -2,20 +2,24 @@ const appUrl = "https://homework-snap.vercel.app";
 
 const features = [
   {
-    title: "Snap or Upload",
-    text: "Use camera for paper homework or upload files like PDF, TXT, and DOCX."
+    title: "Simple Page-by-Page Flow",
+    text: "Students upload one homework page at a time to stay focused and avoid confusion."
   },
   {
     title: "Hint-First Learning",
     text: "Students can ask for a hint before a full answer to build real understanding."
   },
   {
-    title: "Step-by-Step + Check My Work",
-    text: "Kids get guided steps and can verify their own answers with friendly feedback."
+    title: "Step-by-Step + Review Completed Work",
+    text: "Kids get guided steps and can upload completed work for correction hints."
   },
   {
     title: "Parent-Friendly Insights",
     text: "Track weekly usage, subject trends, and progress without overcomplication."
+  },
+  {
+    title: "Adult Answer Key Workspace",
+    text: "Parent/teacher/tutor accounts can access a separate PIN-protected Answer Key area."
   }
 ];
 
@@ -30,7 +34,11 @@ const faqs = [
   },
   {
     q: "Does it only give answers?",
-    a: "No. HomeworkSnap is learning-first, with Hint, Step-by-Step, and Check My Work modes."
+    a: "No. HomeworkSnap is learning-first, with Hint, Step-by-Step, Check My Work, and completed-homework review modes."
+  },
+  {
+    q: "Can adults access direct answer keys?",
+    a: "Yes. Parent/Teacher/Tutor roles can use a separate Answer Key workspace with optional PIN protection."
   },
   {
     q: "Is it parent-friendly?",
@@ -54,7 +62,7 @@ export default function Page() {
             <p className="kicker">AI Homework Helper for Families</p>
             <h1>Snap Homework. Learn Smarter.</h1>
             <p className="lead">
-              HomeworkSnap helps students get fast, clear homework support from a photo or file upload — with hint-first learning built in.
+              HomeworkSnap helps students get fast, clear homework support from a photo or file upload — with a clean page-by-page workflow and hint-first learning built in.
             </p>
             <div className="cta-row">
               <a className="btn btn-primary" href={appUrl} target="_blank" rel="noreferrer">
@@ -67,12 +75,12 @@ export default function Page() {
           </section>
 
           <aside className="hero-card">
-            <h3>Why parents choose it</h3>
+            <h3>Why families choose it</h3>
             <ul>
-              <li>Hint-first by default</li>
+              <li>Simple one-page-at-a-time experience</li>
               <li>Supports photo + digital homework files</li>
               <li>Grade-level personalization</li>
-              <li>Simple weekly learning insights</li>
+              <li>Adult Answer Key workspace with PIN lock</li>
             </ul>
           </aside>
         </div>
@@ -84,17 +92,17 @@ export default function Page() {
           <article>
             <span>1</span>
             <h3>Add homework</h3>
-            <p>Take a photo or upload the assignment file.</p>
+            <p>Take a photo or upload one assignment page.</p>
           </article>
           <article>
             <span>2</span>
             <h3>Choose help mode</h3>
-            <p>Pick Hint, Step-by-Step, Check My Work, or Full Answer.</p>
+            <p>Pick Hint, Step-by-Step, Check My Work, Review Completed Homework, or Full Answer.</p>
           </article>
           <article>
             <span>3</span>
             <h3>Learn and improve</h3>
-            <p>Get clear explanations and track progress over time.</p>
+            <p>Get clear explanations, correction guidance, and progress insights over time.</p>
           </article>
         </div>
       </section>
